@@ -15,7 +15,8 @@ def get_invoice():
         "title": "Сбросить лимит",
         "description": "Оплата сброса ограничений",
         "payload": "reset_limit",
-        "provider_token": "",
+        "provider_token": os.getenv("PROVIDER_TOKEN"),
+
         "currency": "XTR",
         "prices": [{"label": "Сброс", "amount": 1000}]
     }
